@@ -1,0 +1,76 @@
+.container {
+  background-color: #ECECEC;
+  height: 7.6rem;
+  background: #E7E9EE;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.waveformWrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  visibility: visible !important;
+  position: relative;
+  z-index: 0;
+}
+
+.waveformWrapper>div {
+  height: 4rem;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.waveformWrapper.isPlaying>div {
+  overflow: visible;
+}
+
+.waveformWrapper>div wave rect {
+  stroke: none;
+}
+
+.waveformWrapper>div wave rect.selected {
+  fill: #1B9FFC;
+}
+
+.iconPlaying {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  color: #1B9FFC;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+
+.timesWrap {
+  display: flex;
+  align-items: center;
+}
+
+.currentTime {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #616161;
+}
+
+.durationTime {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  color: #8592AA;
+  margin-left: 0.7rem;
+}
