@@ -138,15 +138,13 @@ export const SoundWave = () => {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.btnPlay} onClick={togglePlayback}>
-          <i
-            className={`${
-              isPlaying
-                ? "fal fa-pause"
-                : isReplay
-                ? "fal fa-undo"
-                : "fal fa-play"
-            } ${styles.iconPlaying}`}
-          />
+          {isPlaying ? (
+            <button>pause</button>
+          ) : isReplay ? (
+            <button>undo</button>
+          ) : (
+            <button>play</button>
+          )}
         </div>
         <div className={styles.waveformWrapper}>
           <div ref={containerRef}></div>
